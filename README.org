@@ -4,6 +4,7 @@
 - [[#general-assumptions][General Assumptions]]
   - [[#process-discovery][Process Discovery]]
   - [[#definitions][Definitions]]
+  - [[#identifying-bounded-contexts][Identifying Bounded Contexts]]
 
 * About
 Welcome to our Bike Sharing Application—a modern and efficient solution for urban mobility. This project is designed with Domain-Driven Design (DDD) principles, leveraging Java and Spring Boot to demonstrate a robust architecture capable of handling complex business rules and operations of a bike sharing ecosystem.
@@ -71,3 +72,40 @@ We identified the following Definitions while thinking about the different state
 # Local Variables:
 # jinx-local-words: "BusinessAccountUser ElectricBicycle ElectricBikePermit EmptyStation FullStation MaintenanceCheck MembershipPlan PenaltyFee PremiumBicycle RegisteredUser RentalSession StandardBicycle TandemBicycle UnavailableBicycle microservices"
 # End:
+** Identifying Bounded Contexts
+For the bike-sharing application, we can outline several potential bounded contexts based on the domain objects and interactions identified earlier:
+
+1. *User Management Context*
+   - Focus: Handling user registration, authentication, profile management, membership plans, and dues.
+   - Key Domain Objects: User, RegisteredUser, BusinessAccountUser, MembershipPlan
+   - Primary Processes: User registration, membership plan changes, dues management.
+
+2. *Rental Management Context*
+   - Focus: Activities related to renting and returning bicycles, managing rental sessions, and handling penalties.
+   - Key Domain Objects: RentalSession, PenaltyFee, Bicycle, StandardBicycle, ElectricBicycle, TandemBicycle
+   - Primary Processes: Starting/ending rental sessions, calculating penalties.
+
+3. *Reservation Context*
+   - Focus: Managing the reservation process for bicycles.
+   - Key Domain Objects: Reservation, Bicycle
+   - Primary Processes: Creating and expiring reservations, handling reservation holds.
+
+4. *Station Management Context*
+   - Focus: Managing stations and the availability of bicycles at each station.
+   - Key Domain Objects: Station, FullStation, EmptyStation, Bicycle
+   - Primary Processes: Updating station availability, handling full and empty station status.
+
+5. *Inventory Management Context*
+   - Focus: Life-cycle and location management of bicycles within the system.
+   - Key Domain Objects: Inventory, Bicycle
+   - Primary Processes: Adding, removing, and relocating bicycles in the inventory.
+
+6. *Maintenance Context*
+   - Focus: Scheduling and performing maintenance on bicycles.
+   - Key Domain Objects: Bicycle, MaintenanceCheck, UnavailableBicycle
+   - Primary Processes: Reporting issues, scheduling, and performing maintenance checks.
+
+7. *Notification Context*
+   - Focus: Managing the notification system for alerts like reservations, maintenance, and dues.
+   - Key Domain Objects: Notification, Reservation
+   - Primary Processes: Sending various alerts, managing notification rules.
