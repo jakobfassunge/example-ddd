@@ -1,7 +1,5 @@
 #+title: Readme
 
-This is a readme for the example ddd project. We will build a Bike-Sharing app using spring-boot and domain-driven-design.
-
 * About
 Welcome to our Bike Sharing Application—a modern and efficient solution for urban mobility. This project is designed with Domain-Driven Design (DDD) principles, leveraging Java and Spring Boot to demonstrate a robust architecture capable of handling complex business rules and operations of a bike sharing ecosystem.
 
@@ -9,11 +7,11 @@ Our application facilitates seamless rental experiences by allowing users to acc
 
 Key features of the application include:
 
-- **Diverse Bicycle Options**: Users can choose from standard, electric, and tandem bicycles, with flexible rental rates and membership plans to suit various budgets and purposes.
-- **User-Friendly Interface**: With real-time maps and intuitive design, users can easily find available bikes, open docks, and charging stations, ensuring a smooth and engaging user experience.
-- **Account Management**: Users can manage their rentals, track their history, and access exclusive member benefits all within their user profile.
-- **Efficient Operations**: Our system ensures bicycles are well-maintained, with automated scheduling for maintenance, and swift handling of user-reported issues.
-- **Scalability and Resilience**: Built on a microservices architecture with Spring Boot, the application is designed to scale efficiently and maintain high availability in urban environments.
+- *Diverse Bicycle Options*: Users can choose from standard, electric, and tandem bicycles, with flexible rental rates and membership plans to suit various budgets and purposes.
+- *User-Friendly Interface*: With real-time maps and intuitive design, users can easily find available bikes, open docks, and charging stations, ensuring a smooth and engaging user experience.
+- *Account Management*: Users can manage their rentals, track their history, and access exclusive member benefits all within their user profile.
+- *Efficient Operations*: Our system ensures bicycles are well-maintained, with automated scheduling for maintenance, and swift handling of user-reported issues.
+- *Scalability and Resilience*: Built on a microservices architecture with Spring Boot, the application is designed to scale efficiently and maintain high availability in urban environments.
 
 This project not only provides a functioning example of a complex business application but also serves as an educational resource for understanding and applying Domain-Driven Design in real-world scenarios. We hope this application inspires innovation and improvement in urban transport solutions, paving the way for smarter, greener cities.
 
