@@ -63,3 +63,7 @@ We identified the following Definitions while thinking about the different state
 - *UnavailableBicycle* :: A bicycle that is not available for rent due to maintenance requirements or being out of service.
 - *Notification* :: An automated alert sent to users regarding reservation expirations, overdue rentals, maintenance alerts, and other important information.
 - *Inventory* :: The complete collection of bicycles managed by the system, tracked by location and availability.
+
+# Local Variables:
+# jinx-local-words: "BusinessAccountUser ElectricBicycle ElectricBikePermit EmptyStation FullStation MaintenanceCheck MembershipPlan PenaltyFee PremiumBicycle RegisteredUser RentalSession StandardBicycle TandemBicycle UnavailableBicycle microservices"
+# End:
