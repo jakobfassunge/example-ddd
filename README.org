@@ -1,6 +1,8 @@
 * Table of Contents :toc:
 - [[#about][About]]
 - [[#domain-description][Domain Description]]
+- [[#general-assumptions][General Assumptions]]
+  - [[#process-discovery][Process Discovery]]
 
 * About
 Welcome to our Bike Sharing Application—a modern and efficient solution for urban mobility. This project is designed with Domain-Driven Design (DDD) principles, leveraging Java and Spring Boot to demonstrate a robust architecture capable of handling complex business rules and operations of a bike sharing ecosystem.
@@ -30,3 +32,6 @@ Users can view their rental history, outstanding dues, and other account details
 The bike sharing system keeps track of bicycles as part of its inventory. Each bicycle is identified by a unique serial number and is linked to a specific station when docked. New bicycles can be added to the system's inventory and assigned to a station. The application ensures proper syncing between the physical locations and the digital inventory.
 
 To provide a smooth user experience, system components such as user notifications for reservation expirations, maintenance alerts, overdue rentals, and more operate seamlessly in the background. This ensures the system consistently meets user needs and operational standards.
+* General Assumptions
+** Process Discovery
+First begin with big picture event-storming
