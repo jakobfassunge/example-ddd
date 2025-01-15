@@ -1,0 +1,32 @@
+#+title: Readme
+
+This is a readme for the example ddd project. We will build a Bike-Sharing app using spring-boot and domain-driven-design.
+
+* About
+Welcome to our Bike Sharing Application—a modern and efficient solution for urban mobility. This project is designed with Domain-Driven Design (DDD) principles, leveraging Java and Spring Boot to demonstrate a robust architecture capable of handling complex business rules and operations of a bike sharing ecosystem.
+
+Our application facilitates seamless rental experiences by allowing users to access and rent bicycles from a network of strategically placed stations throughout the city. Whether it's the standard bike for a casual ride, an electric bike for added convenience, or a tandem bike for company, our system caters to a diverse range of preferences and needs.
+
+Key features of the application include:
+
+- **Diverse Bicycle Options**: Users can choose from standard, electric, and tandem bicycles, with flexible rental rates and membership plans to suit various budgets and purposes.
+- **User-Friendly Interface**: With real-time maps and intuitive design, users can easily find available bikes, open docks, and charging stations, ensuring a smooth and engaging user experience.
+- **Account Management**: Users can manage their rentals, track their history, and access exclusive member benefits all within their user profile.
+- **Efficient Operations**: Our system ensures bicycles are well-maintained, with automated scheduling for maintenance, and swift handling of user-reported issues.
+- **Scalability and Resilience**: Built on a microservices architecture with Spring Boot, the application is designed to scale efficiently and maintain high availability in urban environments.
+
+This project not only provides a functioning example of a complex business application but also serves as an educational resource for understanding and applying Domain-Driven Design in real-world scenarios. We hope this application inspires innovation and improvement in urban transport solutions, paving the way for smarter, greener cities.
+
+Happy riding!
+* Domain Description
+A bike sharing application allows users to rent bicycles from various stations located throughout a city. Bicycles can be rented by any registered user, but a single bicycle can only be rented by one user at a time. The bicycles are categorized into standard, electric, and tandem types, each with distinct rental fees. Electric bicycles require the user to have a valid "electric bike permit" to rent. Users can hold a maximum of two active rentals at any given time, while business accounts may have a fleet of up to ten active rentals simultaneously for corporate use. A rental session starts when a user unlocks a bicycle using the application and is completed when the bicycle is returned to any designated station. If a rental session exceeds its allotted time, it incurs a penalty fee.
+
+The application offers various membership plans that affect rental rates and available bicycles. For instance, premium members enjoy discounted rates and can access reserved premium bicycles at select stations. Users can have a reservation hold on a bicycle for a limited time, up to 15 minutes, after which the hold will expire if not activated by starting a rental session. Reservations cannot be made if a user has reached the maximum allowed rentals.
+
+Bicycles undergo regular maintenance checks, which are automatically scheduled based on usage data. If a bicycle requires maintenance, it is flagged as unavailable until the issues are resolved. Users can report issues through the application during or after their rental session.
+
+Users can view their rental history, outstanding dues, and other account details through their profile within the application. The application provides a real-time map with the availability of bicycles and open docks at stations, helping users plan their trips. Users can also use the map to locate nearby charging stations for electric bicycles.
+
+The bike sharing system keeps track of bicycles as part of its inventory. Each bicycle is identified by a unique serial number and is linked to a specific station when docked. New bicycles can be added to the system's inventory and assigned to a station. The application ensures proper syncing between the physical locations and the digital inventory.
+
+To provide a smooth user experience, system components such as user notifications for reservation expirations, maintenance alerts, overdue rentals, and more operate seamlessly in the background. This ensures the system consistently meets user needs and operational standards.
