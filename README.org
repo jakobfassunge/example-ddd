@@ -1,5 +1,9 @@
 #+title: Readme
 
+* Table of Contents :toc:
+- [[#about][About]]
+- [[#domain-description][Domain Description]]
+
 * About
 Welcome to our Bike Sharing Application—a modern and efficient solution for urban mobility. This project is designed with Domain-Driven Design (DDD) principles, leveraging Java and Spring Boot to demonstrate a robust architecture capable of handling complex business rules and operations of a bike sharing ecosystem.
 
