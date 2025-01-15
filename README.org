@@ -3,6 +3,7 @@
 - [[#domain-description][Domain Description]]
 - [[#general-assumptions][General Assumptions]]
   - [[#process-discovery][Process Discovery]]
+  - [[#definitions][Definitions]]
 
 * About
 Welcome to our Bike Sharing Application—a modern and efficient solution for urban mobility. This project is designed with Domain-Driven Design (DDD) principles, leveraging Java and Spring Boot to demonstrate a robust architecture capable of handling complex business rules and operations of a bike sharing ecosystem.
@@ -39,3 +40,26 @@ First begin with big picture event-storming
 #+attr_latex: :placement [H]
 #+name: fig-label
 [[file:DDD_Bikesharing_Part_1_Event_Storming.jpg]]
+** Definitions
+We identified the following Definitions while thinking about the different states of the Domain-Objects
+
+- *User* :: An individual or business entity registered in the system that can rent bicycles.
+- *RegisteredUser* :: A user who has successfully completed the registration process.
+- *BusinessAccountUser* :: A user representing a corporate account, capable of managing multiple bike rentals.
+- *ElectricBikePermit* :: Authorization required for a user to rent electric bicycles.
+- *Bicycle* :: A vehicle available for rent in the bike-sharing system, including standard, electric, and tandem types.
+- *StandardBicycle* :: A conventional bicycle without any electric assistance features.
+- *ElectricBicycle* :: A bicycle equipped with an electric motor that requires a valid permit to rent.
+- *TandemBicycle* :: A bicycle designed to be ridden by two people.
+- *Station* :: A designated location where bicycles are docked and can be rented or returned.
+- *FullStation* :: A station that has reached its maximum capacity of docked bicycles, preventing additional returns.
+- *EmptyStation* :: A station with no bicycles available for rent.
+- *RentalSession* :: A time period initiated when a bicycle is rented and concluded when it is returned to a station.
+- *Reservation* :: A temporary hold placed on a bicycle to keep it available for a user up to a predefined expiration time.
+- *MembershipPlan* :: A subscription offering that affects rental rates and bicycle access privileges for users.
+- *PremiumBicycle* :: A specially designated bicycle available only to premium members.
+- *PenaltyFee* :: An additional charge incurred when a rental session exceeds the designated rental time.
+- *MaintenanceCheck* :: A routine inspection performed to ensure bicycles are safe and in good working order.
+- *UnavailableBicycle* :: A bicycle that is not available for rent due to maintenance requirements or being out of service.
+- *Notification* :: An automated alert sent to users regarding reservation expirations, overdue rentals, maintenance alerts, and other important information.
+- *Inventory* :: The complete collection of bicycles managed by the system, tracked by location and availability.
