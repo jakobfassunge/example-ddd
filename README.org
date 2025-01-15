@@ -35,3 +35,7 @@ To provide a smooth user experience, system components such as user notification
 * General Assumptions
 ** Process Discovery
 First begin with big picture event-storming
+#+caption: Bikesharing Event Storming
+#+attr_latex: :placement [H]
+#+name: fig-label
+[[file:DDD_Bikesharing_Part_1_Event_Storming.pdf]]
