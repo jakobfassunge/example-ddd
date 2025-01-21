@@ -42,14 +42,12 @@ public class Station implements AggregateRoot<Station.StationNumber> {
 
 	@Override
 	public Station.StationNumber id() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'id'");
+		return stationNumber;
 	}
 
 	@Override
 	public long concurrencyVersion() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'concurrencyVersion'");
+		return concurrencyVersion;
 	}
 
 }
