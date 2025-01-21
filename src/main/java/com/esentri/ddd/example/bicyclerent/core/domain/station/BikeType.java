@@ -1,10 +1,8 @@
 package com.esentri.ddd.example.bicyclerent.core.domain.station;
 
-/**
- * BikeType
- */
+/** BikeType */
 public enum BikeType {
-	NORMAL,
-	TANDEM,
-	ELECTRICAL,
+  NORMAL,
+  TANDEM,
+  ELECTRICAL,
 }

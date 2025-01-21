@@ -2,6 +2,7 @@ plugins {
     java
     id("org.springframework.boot") version "3.4.1"
     id("io.spring.dependency-management") version "1.1.7"
+    id("com.diffplug.spotless") version "6.23.0" // Add the Spotless plugin
 }
 
 group = "com.esentri.ddd"
@@ -36,4 +37,15 @@ dependencies {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+spotless {
+    java {
+        // You can define your preferred style here, e.g., Google's Java Style
+        googleJavaFormat()
+        // If you have specific customizations, you can chain them with additional settings.
+        // For example, you might add a license header or tweak import ordering.
+        
+        // licenseHeaderFile("path/to/licenseHeader") // Uncomment and set path if you have a license header
+    }
 }
