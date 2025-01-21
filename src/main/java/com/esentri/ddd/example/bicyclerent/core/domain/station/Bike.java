@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.UUID;
 
 import io.domainlifecycles.domain.types.Identity;
+import io.domainlifecycles.domain.types.ValueObject;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
@@ -12,7 +13,7 @@ import lombok.Getter;
  */
 @Getter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Bike {
+public class Bike implements ValueObject {
 	public record Id(UUID value) implements Identity<UUID> {
 	}
 
