@@ -116,6 +116,3 @@ For the bike-sharing application, we can outline several potential bounded conte
 In a station we can add or remove Bicycles. The station has different states:
 1. Empty station: In this state you can not get a new bicycle from the station
 2. Full station: The station is full. It is not possible for a user to bring a bike to the station until someone took a bike from the station. On could track arrival and leaving times to find out the state in the future. For example suppose a station is currently full and someone has planned a route such that he will reach the station in 50 minutes. In 20 minutes 2 Bikes will be rented at the same station. In this case one could assume, that the station will have enough capacity at the arrival-time of the first person
-
-
-The next step is to build the aggregate for the Station
