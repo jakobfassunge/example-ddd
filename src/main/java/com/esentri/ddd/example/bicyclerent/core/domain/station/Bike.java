@@ -30,4 +30,16 @@ public class Bike implements AggregateRoot<Bike.Id> {
     this.bikeType = bikeType;
     this.occupancies = occupancies;
   }
+
+@Override
+public Id id() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'id'");
+}
+
+@Override
+public long concurrencyVersion() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'concurrencyVersion'");
+}
 }
